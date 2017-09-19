@@ -95,7 +95,10 @@ Add an additional property `forwardAuthToken: true` to the destinations property
 <br>
 
 # Authorization (optional)
-Our next challenge is to enhance the application with authorization checking code.  
+
+Check your timing and rather continue with [Exercise5](../exercise5/README.md).
+ 
+Otherwise your next challenge is to enhance the application with authorization checking code.  
 We will introduce two categories of users: those who can only _view_ the country information, and those who are authorized to _add_ new countries.  
 
 ## Step 0 - The security concept of XS Advanced
@@ -366,3 +369,6 @@ Select the new role collection "cpl166_collection" by ticking the checkbox and c
 Complete the assignment by clicking on the "Save" button.
 
 Now feel free to test your application. This requires a browser restart or new incognito session!
+<br><br>
+
+Continue with [Exercise5](../exercise5/README.md)

@@ -234,6 +234,9 @@ CALL "CPL166MTA.cpl166db::createCountry"('Denmark', 'Europe', ?);
 The content of the tables can be checked with a Select statement:   
 
 <img src="img/CPL166_030.png" alt="exercise1" width="70%">  
+<br><br>
+
+Continue with [Exercise2](../exercise2/README.md)
 
 
 

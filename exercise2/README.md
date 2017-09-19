@@ -123,3 +123,6 @@ The built-in debugger in Web IDE enables you to perform standard debugging tasks
 5. Now use a new browser tab to insert a new country like ".../country.xsjs?name=Andorra&continent=Europe"<br>
 6. In the debug tool you can examine the call stack and see the value assigned to any variable in the function "saveCountry". If you want to modify variables in the context of the current breakpoint, you can use the Debug Console to type in any valid JavaScript statement, including variable assignments. Feel free to experiment with the debug controls.<br>
 7. Choose "Resume" to complete execution of the JavaScript
+
+<br><br>
+Continue with [Exercise3](../exercise3/README.md)

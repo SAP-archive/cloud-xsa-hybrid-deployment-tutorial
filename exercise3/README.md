@@ -205,13 +205,6 @@ You can now test your app by starting it as a Web Application.
 <br><br>
 <img src="img/CPL166_042.png" alt="exercise3" width="40%"> 
 
+<br><br>
 
-
-
-
-
-
-
-
-
-
+Continue with [Exercise4](../exercise4/README.md)

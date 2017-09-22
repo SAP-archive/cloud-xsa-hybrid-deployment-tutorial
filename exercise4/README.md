@@ -1,7 +1,7 @@
 ### CPL166
 # Exercise 4: Adding Authentication and Authorization to your Application
 
-Up till no we have allowed _anonymous_ access for our application. We will now introduce authentication and authorization to secure our application.  
+Up to now we have allowed _anonymous_ access for our application. We will now introduce authentication and authorization to secure our application.  
   
 **Authentication** forces users to log on and identify themselves, before they can use the application.  
 **Authorization** defines what a certain user can do.  
@@ -110,7 +110,7 @@ An application can also define a **role-template** which simplifies the process 
 With the concept explained, we can now go ahead and enable authorization for our application. This involves the following steps:
 
 1. Define scopes and role-templates in the security configuration file (xs-security.json)
-2. Recreate the uaa service instance based on the xs-security.json configuration
+2. Recreate the UAA service instance based on the xs-security.json configuration
 3. Add authorization checks in the front- and back-end modules
 4. Create roles and role collections from templates and assign them to users
 
@@ -154,7 +154,7 @@ Create an xs-security.json file in the root folder of your project with the foll
 
 The file defines two scopes; one to only _view_ data and another to _create_ data. The scopes are consolidated in two role-templates. Notice that the role-template `tinyworldCreate` includes both scopes to _view_ and _create_ data. Consolidation of multiple scopes should be done on this level, while scopes should always only represent one single privilege.
   
-Now we need to update the uaa resource, defined in the `mta.yaml` file, to use the xs-security.json file. To do so, add a new parameter in the resources section. Key is `path` and value is `./xs-security.json`
+Now we need to update the UAA resource, defined in the `mta.yaml` file, to use the xs-security.json file. To do so, add a new parameter in the resources section. Key is `path` and value is `./xs-security.json`
 
 <img src="img/uaa_resource.png" alt="Add parameter to reference xs-security.json file">
 
@@ -163,7 +163,7 @@ Now we need to update the uaa resource, defined in the `mta.yaml` file, to use t
 <br>
 
 ## Step 2 - Provision the UAA service with xs-security.json
-Next we need to update our uaa service instance with the new authorization configuration defined in the xs-security.json file. To do that you first need to download the file from your project in WebIDE to a folder accessible from your command line tool. Right click on xs-security.json and select "Export". The file will now be in your local Downloads folder.
+Next we need to update our UAA service instance with the new authorization configuration defined in the xs-security.json file. To do that, download the file from your project in Web IDE to a folder accessible from your command line tool. Right click on xs-security.json and select "Export". The file will now be in your local "Downloads" folder.
 
 
 Open a command prompt and navigate to the "Downloads" folder by entering the following cd command and confirming with enter.
@@ -174,7 +174,7 @@ cd Downloads
 
 <br>
 
-Next we need to login to XS Advanced in order to create the uaa service instance. This can be done with the following command (confirm with enter). Enter the credentials and select the space "DEV".
+Next we need to login to XS Advanced in order to create the UAA service instance. This can be done with the following command (confirm with enter). Enter the credentials and select the space "DEV".
 
 ```
 xs login -a https://WDFlbmt0749.wdf.sap.corp:30030 --skip-ssl-validation
@@ -288,7 +288,7 @@ For the changes to take effect, stop and rerun the `cpl166js` and `cpl166ui` mod
 
 Next we need to create actual roles from the role-template using the __Application Role Builder__, which is part of the XS Advanced Administration Tools.
 
-To open the Administration Tools, we need to find out there url. Therefore open a command prompt and type in the following xs command to switch to the "SAP" space:
+To open the Administration Tools, we need to find out the url. Therefore open a command prompt and type in the following xs command to switch to the "SAP" space:
 
 ```
 xs target -s SAP 
@@ -311,7 +311,7 @@ xs app xsa-admin --urls
 
 <br>
 
-Copy the url and paste it in the address bar of chrome.
+Copy the url and paste it in the address bar of Chrome.
 The Administration Tools overview page will open.
 
 <img src="img/admin_overview.png" alt="Admin overview page">
@@ -331,7 +331,7 @@ Create a new role collection by clicking on the `+` icon.
 
 <br>
 
-Enter the name `cpl166_collection` and confirm. Now select  the new created role collection in the list on the left side. A detail view will open on the right side of the screen. Switch to the "Roles" tab.
+Enter the name `cpl166_collection` and confirm. Now select the new created role collection in the list on the left side. A detail view will open on the right side of the screen. Switch to the "Roles" tab.
 
 <img src="img/roles.png" alt="roles tab">
 

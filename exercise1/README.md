@@ -99,9 +99,9 @@ Now select the `cpl166db` module, right-click and select "Build". This starts th
 <img src="img/CPL166_011.png" alt="exercise1" width="30%">  
 <br><hr><br>
 
-## Step 3 - Using analytic capabilities to show european countries only
+## Step 3 - Using analytic capabilities to show European countries only
 
-In this step we will leverage the analytic capabilities of SAP HANA to create a view that only shows the countries of the continent europe.
+In this step we will leverage the analytic capabilities of SAP HANA to create a view that only shows the countries of the continent Europe.
 We will use the SAP HANA modeler to graphically create a Calculation View.
 
 To create a Calculation View, navigate to the `src/` subfolder of the `cpl166db` module, right-click and select "New" -> "Calculation View". In the upcoming wizard, enter the name `european_countries` and select the data category "Dimension". Then click "Create". 
@@ -130,7 +130,7 @@ Now we need to _connect_ the "Data Sources" to the "Output Columns": select the 
 <img src="img/CPL166_036.png" alt="exercise1" width="70%">  
 <br><br>
 
-With the Data Sources connected, we need to create a "Filter Expression" to filter for countries in europe. Navigate to the respective tab, open the "Columns" element and then double-click on `partof_continent`. In the operators selector click on the `=` button. The expression will appear at the top; complete it by typing ```'Europe'```.
+With the Data Sources connected, we need to create a "Filter Expression" to filter for countries in Europe. Navigate to the respective tab, open the "Columns" element and then double-click on `partof_continent`. In the operators selector click on the `=` button. The expression will appear at the top; complete it by typing ```'Europe'```.
 
 <img src="img/CPL166_037.png" alt="exercise1" width="70%">  
 <br><br>

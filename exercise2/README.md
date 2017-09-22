@@ -9,11 +9,11 @@ In this exercise we will implement additional application business logic using N
 <br><br>
 <img src="img/CPL166_ex2_008.png" alt="exercise2" width="60%"> 
 <br><br>
-The setup Wizard creates the new Node.js module which contains a number of default folders and files, for example, the file `lib/index.xsjs` with simple "Hello World" code. It would be runnable already, but we will keep that for later after doing some real coding. The module is also automatically added to our application descriptor `mta.yaml`.
+The setup wizard creates the new Node.js module which contains a number of default folders and files, for example, the file `lib/index.xsjs` with simple "Hello World" code. It would be runnable already, but we will keep that for later after doing some real coding. The module is also automatically added to our application descriptor `mta.yaml`.
 
 <br><hr><br>
 ## Step 2 - Creating and exposing a new OData service
-1. In folder tree do a right-click on the `cpl166js/lib` folder and create a new file called `euro.xsodata`. Using this suffix will enable the file to define OData services via declarative syntax. Add the following content to this file
+1. In your workspace right-click on the `cpl166js/lib` folder and create a new file called `euro.xsodata`. Using this suffix will enable the file to define OData services via declarative syntax. Add the following content to this file
 ```
 service {
   "CPL166MTA.cpl166db::european_countries" as "euro" keys generate local "ID";
@@ -32,7 +32,7 @@ We will also review necessary parameters to expose the service.<br>
 <br><br>
 <img src="img/CPL166_ex2_000.png" alt="exercise2" width="80%"> 
 <br><br>
-6. Don't forget so save your changes. You may also review what happened in the mta.yaml using the text based editor now.
+6. Don't forget to save your changes. You may also review what happened in the mta.yaml using the text based editor now.
 <br><hr><br>
 
 ## Step 3 - Testing the OData service
@@ -85,7 +85,7 @@ To keep things simple, we uses the HTTP GET method to access the service used to
 1. Open the file `cpl166js/package.json` and update the version dependency for @sap/xsjs to version "1.14.1". Then save the file.
 1. Right-click on the module `cpl166js` and choose  "Run" -> "Run as Node.js Application"  in the context menu. The command automatically builds the application, too. 
 1. As before, you can click on the link which is displayed on top of the Run Console after successful build to start the application in a new browser tab.
-1. In your Web browser, replace the URL element `/index.xsjs` with the string `/country/country.xsjs?name=China&continent=Asia`. Add some more countries like
+1. In your web browser, replace the URL element `/index.xsjs` with the string `/country/country.xsjs?name=China&continent=Asia`. Add some more countries like
 ```
 .../country.xsjs?name=Albania&continent=Europe
 .../country.xsjs?name=Sweden&continent=Europe

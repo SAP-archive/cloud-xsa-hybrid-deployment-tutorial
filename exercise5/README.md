@@ -4,7 +4,7 @@ In this exercise, we will take the previously developed application and deploy i
 
 
 ## Step 1 - Adjust configuration files
-The mta descriptor file and the xs-security configuration require some smaller extension to work within the cloud environment.  
+The MTA descriptor file and the xs-security configuration require some smaller extension to work within the cloud environment.  
 
 Because of the quota restrictions of the trial account that we are using in this session, we need to set a memory limit for the 'cpl166js' and 'cpl166ui' module. The module 'cpl166db' does not need to be restricted as the type `com.sap.xs.hdi` already includes an implicit memory limit to 256MB.
 
@@ -41,7 +41,7 @@ Add the same parameter for the module 'cpl166ui'.
   <hr>
   <br>
   
-## Step 2 - Create the mta archive
+## Step 2 - Create the MTA archive
 For the cloud deployment we need to create an mta archive. Right-click on the project-name 'CPL166MTA' and select 'Build'. Wait for the builder to finish.  
 
 <img src="img/build_mtar.png" alt="Build mtar">

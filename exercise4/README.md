@@ -152,7 +152,7 @@ Create an xs-security.json file in the root folder of your project with the foll
 ```
 <br>
 
-The file defines two scopes; one to only _view_ data and another to _create_ data. The scopes are consolidated in two role-templates. Notice that the role-template `tinyworldCreate` includes both scopes to _view_ and _create_ data. Consolidation of multiple scopes should be done on this level, while scopes should always only represent one single privilege.
+The file defines two scopes; one to only _view_ data and another to _create_ data. The scopes are consolidated in two role-templates. Notice that the role-template `cpl166Create` includes both scopes to _view_ and _create_ data. Consolidation of multiple scopes should be done on this level, while scopes should always only represent one single privilege.
   
 Now we need to update the UAA resource, defined in the `mta.yaml` file, to use the xs-security.json file. To do so, add a new parameter in the resources section. Key is `path` and value is `./xs-security.json`
 

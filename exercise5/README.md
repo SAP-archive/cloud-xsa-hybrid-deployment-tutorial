@@ -20,7 +20,7 @@ Add the same parameter for the module 'cpl166ui'.
   <br>
   
   Now select the module 'cpl166ui' and add a property with the key 'TENANT_HOST_PATTERN' and the value   
-  `^(.*)-trial-dev-cpl166ui.cfapps.eu10.hana.ondemand.com`:
+  `^(.*)-trial-dev-cpl166ui.cfapps.us10.hana.ondemand.com`:
   
   <img src="img/tenant-host-pattern.png" alt="TENTANT HOST PATTERN setting"/>
   <br>
@@ -93,7 +93,7 @@ Open a command window by right-clicking in the Explorer and selecting 'Open Comm
 First we need to set the correct api endpoint of the SAP Cloud Foundry Trial installation. Enter the following command and confirm by pressing enter.
 
 ```
-cf api https://api.cf.eu10.hana.ondemand.com
+cf api https://api.cf.us10.hana.ondemand.com
 ```
 <br>
 
@@ -118,37 +118,3 @@ With the login done, we can start the application deployment. Therefore enter th
 ```
 cf deploy cpl166mta_2.0.0.mtar
 ```
-
-## Step 5 - Create a Role Collection and assign it to your user (optional - only necessary if corresponding authorization tasks in chapter 4 have been done)
-Similar to the previous exercise, we now need to create a role collection and assign it to our user in order to be authorized to access our new application.  
-
-Firstly we need to logon once to our uaa tenant to make our user known. Navigate to the url below. 
-You need to replace `<p-username>` with your username. 
-
-```
-https://<p-username>trial.authentication.eu10.hana.ondemand.com
-```
-
-Login with your credentials and then switch back to the SAP Cloud Platform Cockpit.
-
-<img src="img/first-uaa-login.png" alt="uaa login page"/>
-<br>
-
-Open the "Security" menu item and navigate to Role Collections page. Create a new collection called 'cpl166_collection'
-<img src="img/trial-create-rolecollection.png" alt="Trust Configuration page"/>
-<br>
-
-Navigate to the Trust Configuration page.
-
-<img src="img/trust-configuration.png" alt="Trust Configuration page" />
-<br>
-
-Click on 'SAP ID Service'. This brings you to another view called 'Role Collection Assignment'.
-
-<img src="img/role-collection-assignment.png" alt="Role Collection Assignment page" />
-<br>
-
-Enter your username in the search field and click on 'Show Assignments'. This enables the button 'Add Assignment'. Click on the button. In the popup select the previously created role collection and confirm by clicking 'Add Assignment'.
-
-<img src="img/add-assignment.png" alt="Add Assignment" />
-<br>

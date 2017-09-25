@@ -84,8 +84,9 @@ function openFirstDialog() {
             var name = sap.ui.getCore().byId("name").getValue();
             var continent = sap.ui.getCore().byId("partof").getValue();
             var payload = {};
-            payload.name = name;
-
+            payload.name = name;
+            payload.partof = partof;            
+	    var insertdata = JSON.stringify(payload);
             
             $.ajax({
                type: "POST",

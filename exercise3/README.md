@@ -85,13 +85,13 @@ function openFirstDialog() {
             var continent = sap.ui.getCore().byId("partof").getValue();
             var payload = {};
             payload.name = name;
-            payload.continent = continent;
-            
+
+            
             $.ajax({
                type: "POST",
                url: "country/country.xsjs",
                contentType: "application/json",
-               data: payload,
+               data: insertdata,
                dataType: "json",
                crossDomain: true,
                success: function(data) {

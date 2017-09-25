@@ -56,32 +56,7 @@ Export the archive to you local harddisk by right-clicking and selecting 'Export
 <hr>
 <br>
 
-## Step 3 - Logon to SAP Cloud Platform Cockpit
-Prior to the deployment to SAP Cloud Platform, every user has to register for the Cloud Foundry Trial once.
-Open Chrome and navigate to 
-https://account.hanatrial.ondemand.com
-
-Login with the user assigned to you.
-On the start page of the SAP Cloud Platform Cockpit navigate to the Cloud Foundry Trial by clicking on the respective button ('Start Cloud Foundry Trial').
-
-
-<img src="img/cloud-foundry-trial.png" alt="Cloud Foundry Trial Button" />
-<br>
-
-A popup appears to ask you for the trial landscape. Select 'Europe (Frankfurt)' and confirm with 'Ok'.
-
-
-<img src="img/select-frankfurt.png" alt="Select Europe (Frankfurt)" />
-<br>
-
-The progress will be shown in another popup. Wait for all displayed tasks to finish.
-
-<img src="img/trial-enrollment.png" alt="Progress" />
-<br>
-<hr>
-<br>
-
-## Step 4 - Deploy your application to Cloud Foundry
+## Step 3 - Deploy your application to Cloud Foundry
 In this step we will deploy our new application to Cloud Foundry. On your Laptop, open the Windows Explorer and navigate to the location where you have downloaded the applications mta archive in Step 2. Usually this is the 'Downloads' folder.  
 Open a command window by right-clicking in the Explorer and selecting 'Open Command Window Here'.  
 

@@ -36,6 +36,7 @@ We will also review necessary parameters to expose the service.<br>
 <br><hr><br>
 
 ## Step 3 - Testing the OData service
+1. Open the file `cpl166js/package.json` and update the version dependency for @sap/xsjs to version "1.14.1". Then save the file.
 1. Right-click on the module `cpl166js` and choose  "Run" -> "Run as Node.js Application"  in the context menu. The command automatically builds the application, too. You can view the build/run progress in the run console at the bottom of the SAP Web IDE screen.<img src="img/CPL166_ex2_010.png" alt="exercise2" width="80%">
 1. When the application has started successfully, you will see a link on top of the run console to navigate to it in the browser.
 1. Since we did not change the code in application start-up file `index.xsjs`, the Web browser still displays the text "Hello World". However, you can use a modified URL to test the OData service.
@@ -82,7 +83,7 @@ To keep things simple, we uses the HTTP GET method to access the service used to
 
 <br><hr><br>
 ## Step 5 - Building and testing the Node.js module
-1. Open the file `cpl166js/package.json` and update the version dependency for @sap/xsjs to version "1.14.1". Then save the file.
+
 1. Right-click on the module `cpl166js` and choose  "Run" -> "Run as Node.js Application"  in the context menu. The command automatically builds the application, too. 
 1. As before, you can click on the link which is displayed on top of the Run Console after successful build to start the application in a new browser tab.
 1. In your web browser, replace the URL element `/index.xsjs` with the string `/country/country.xsjs?name=China&continent=Asia`. Add some more countries like

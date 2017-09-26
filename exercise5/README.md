@@ -23,17 +23,10 @@ Add the same parameter for the module 'cpl166ui'.
   `^(.*)-trial-dev-cpl166ui.cfapps.us10.hana.ondemand.com`:
   
   <img src="img/tenant-host-pattern.png" alt="TENTANT HOST PATTERN setting"/>
-  <br>
-  
-  Open the xs-security.json file and add a property with the name `tenant-mode` and the value `shared` underneath the `xsappname` property:
-  
-  <img src="img/tenant_mode.png" alt="Set tenant mode to shared">
-  
-  
+  <br>  
   <br>
   
   Because the hana service is named `hanatrial` in the trial organization, we need to specify this additional mapping in the mta.yaml. Therefore open the mta.yaml and add an additional parameter to the hdi-container resource with the key `service` and `hanatrial`.
-  
   
   
   

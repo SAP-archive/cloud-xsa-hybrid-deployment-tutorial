@@ -58,7 +58,13 @@ Open a command window by right-clicking in the Explorer and selecting 'Open Comm
 <br>
 
 
-First we need to set the correct api endpoint of the SAP Cloud Foundry Trial installation. Enter the following command and confirm by pressing enter.
+First we need to set the correct api endpoint of the SAP Cloud Foundry Trial installation. 
+Do the proxy setting with the following command.
+```
+set http_proxy=proxy:8080
+```
+<br>
+Enter the following command to set the cf api endpoint to the right data center and confirm by pressing enter.
 
 ```
 cf api https://api.cf.us10.hana.ondemand.com
@@ -86,3 +92,5 @@ With the login done, we can start the application deployment. Therefore enter th
 ```
 cf deploy cpl166mta_2.0.0.mtar
 ```
+<br>
+After the deployment you can copy the shown url of the cpl166ui application and open it in your browser to test it in the cloud.

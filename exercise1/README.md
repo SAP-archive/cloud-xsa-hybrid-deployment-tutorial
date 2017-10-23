@@ -167,20 +167,18 @@ BEGIN
   
   declare noc integer;
   
-  select count(*) into noc from "CPL166MTA.cpl166db::cpl166f.world" where "continent" = im_continent;
+      select count(*) into noc from "CPL166MTA.cpl166db::cpl166f.world" where "continent" = im_continent;
   
 	if :noc = 0 then
-		ex_error := 'ERROR: Continent ' || :im_continent || ' does not exist!';
-	else  
-		select count(*) into noc from "CPL166MTA.cpl166db::cpl166f.country" where "name" = im_country;
+		insert into "CPL166MTA.cpl166db::cpl166f.world" values ( im_continent);
+	end if;  
+	select count(*) into noc from "CPL166MTA.cpl166db::cpl166f.country" where "name" = im_country;
 		
-		if :noc > 0 then
-			ex_error := 'ERROR: Country ' || :im_country || ' already exists!';
-		else
-			insert into "CPL166MTA.cpl166db::cpl166f.country" values (im_country, im_continent);
-		end if;
-	end if;	
-  
+	if :noc > 0 then
+		ex_error := 'ERROR: Country ' || :im_country || ' already exists!';
+	else
+		insert into "CPL166MTA.cpl166db::cpl166f.country" values (im_country, im_continent);
+	end if;  
 END
 ```
 

@@ -1,8 +1,12 @@
 ### CPL166 
 # Exercise 1 - Create Project and Database Artifacts
 
+## Step 0 - Log on to your trial account of the Cloud Foundry environment
+Log on to the SAP Cloud Platform cockpit of your trail account using the cockpit URL [https://account.hanatrial.ondemand.com](https://account.hanatrial.ondemand.com) and the user and password provided. Then click on 'Go to Cloud Foundry Trial'. Navigate to your subaccount 'trial'. Click on 'Spaces' in the left navigation pane. Navigate to the your space 'dev'. Once applications are deployed they will be visible there.
 
 ## Step 1 - Create the Project
+Launch SAP Web IDE for SAP HANA by launching the URL [https://wdflbmt0749.wdf.sap.corp:53075/](https://wdflbmt0749.wdf.sap.corp:53075/) in Google Chrome. Login with the User: `CPL166` and Password: `Sap12345`.
+
 An application is created in the context of a _project_. In this session we will start completely from scratch. Therefore, a new project needs to be created by clicking on "File" -> "New" -> "Project from Template".
 
 <img src="img/CPL166_000.png" alt="exercise1" width="60%"> 

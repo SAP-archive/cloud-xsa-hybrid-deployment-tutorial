@@ -26,7 +26,7 @@ Add the same parameter for the module 'cpl166ui'.
   <br>  
   <br>
   
-  Because the hana service is named `hanatrial` in the trial organization, we need to specify this additional mapping in the mta.yaml. Therefore open the mta.yaml and add an additional parameter to the hdi-container resource with the key `service` and `hanatrial`.
+  Because the hana service is named `hanatrial` in the trial organization, we need to specify this additional mapping in the mta.yaml. Therefore open the mta.yaml and for the module 'cpl166db' under Resources add an additional paramter with the key `service` and `hanatrial`.
   
   Now, click Save. Afterwards please open the mta.yaml file with the code editor and check that for the two files 'cpl166js' and 'cpl166ui' the value 256M was saved. If not, please correct it manually and save again. Unfortunately, we have found a bug here in this system, which causes with the save in the graphical editor to remove the M.
   

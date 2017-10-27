@@ -213,7 +213,7 @@ Now we will insert some data into these tables. Open the SQL Console by clicking
 
 <img src="img/CPL166_027.png" alt="exercise1" width="50%">  
 <br><br>
-To insert data, we will use SQL-Insert statements to create the continents and Call statements to create the countries. 
+To insert data, we will use SQL-Insert statements to create the continents and Call statements to create the countries. The SQL-Insert statements can be run together, the Call statements need to be run individually because they contain variables.
 
 <img src="img/CPL166_029.png" alt="exercise1" width="70%">  
 

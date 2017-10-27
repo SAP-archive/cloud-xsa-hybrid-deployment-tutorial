@@ -1,7 +1,7 @@
-# CPL166
-
+### CPL166 
+# Exercise 5 - Deploying your Multi Target APplication to Cloud Platform
 In this exercise, we will take the previously developed application and deploy it to SAP Cloud Platform.
-
+<br><hr><br>
 
 ## Step 1 - Adjust configuration files
 The MTA descriptor file and the xs-security configuration require some smaller extension to work within the cloud environment.  

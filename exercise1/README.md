@@ -217,28 +217,24 @@ To insert data, we will use SQL-Insert statements to create the continents and C
 
 <img src="img/CPL166_029.png" alt="exercise1" width="70%">  
 
-<br>
-
 ```
 INSERT INTO "CPL166MTA.cpl166db::cpl166f.world" VALUES('Europe');
 INSERT INTO "CPL166MTA.cpl166db::cpl166f.world" VALUES('Asia');
 
 
 CALL "CPL166MTA.cpl166db::createCountry"('Spain', 'Europe', ?);
+
 CALL "CPL166MTA.cpl166db::createCountry"('Japan', 'Asia', ?);
+
 CALL "CPL166MTA.cpl166db::createCountry"('Denmark', 'Europe', ?);
-
 ```
-
-
 <br><br>
-
 The content of the tables can be checked with a Select statement:   
 
-<img src="img/CPL166_030.png" alt="exercise1" width="70%">  
+<img src="img/CPL166_030.png" alt="exercise1" width="70%"> 
+
+```
+select * from "CPL166MTA.cpl166db::cpl166f.country";
+```
 <br><br>
-
 Continue with [Exercise2](../exercise2/README.md)
-
-
-

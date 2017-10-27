@@ -93,4 +93,4 @@ With the login done, we can start the application deployment. Therefore enter th
 cf deploy cpl166mta_2.0.0.mtar
 ```
 <br>
-After the deployment you can copy the shown url of the cpl166ui application and open it in your browser to test it in the cloud.
+After the deployment you can copy the shown url of the cpl166ui application and open it in your browser to test it in the cloud. The command `cf apps` will show you all deployed application microservices. Alternatively or additionally, you can now also go back to your SAP Cloud Platform cockpit, refresh and you will see your deployed applications there. Under the application microservice cpl166ui you will see the same URL which you can also open directly from there. 

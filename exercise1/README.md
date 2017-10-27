@@ -34,7 +34,7 @@ You might need to click on 'More...' to see this option.
 <img src="img/CPL166_004.png" alt="exercise1" width="50%"> 
   <br><br>
   
-In the dialog enter the name of the module `cpl166db`. In the next wizard step make sure to select HANA Database Version 2.0 SPS00! This is required because there is no newer Version available on Cloud Platform Trial yet.
+In the dialog enter the name of the module `cpl166db`. In the next wizard step make sure to select HANA Database Version 2.0 SPS00! This is required because there is no newer Version available in the Cloud Foundry Trial yet.
 
 <img src="img/CPL166_006.png" alt="exercise1" width="70%"> 
 <br>
@@ -69,11 +69,11 @@ context cpl166f {
 
 ```
 <br><br>
-After this, we will create the second entity using the graphical CDS editor. Open the graphical editor by right-clicking on the file `cpl166f.hdbcds` and selecting "Open With" -> "Graphical Editor":
+After this, we will create the second entity using the graphical CDS editor, so that you also experience the usage of that. Open the graphical editor by right-clicking on the file `cpl166f.hdbcds` and selecting "Open With" -> "Graphical Editor":
 
 <img src="img/CPL166_020.png" alt="exercise1" width="70%">  
 <br><br>
-Now add a new entity by clicking on the respective icon. Place it by moving the mouse on the canvas and left-clicking to complete. Now enter the name `country`.
+Now add a new entity by clicking on the respective icon. Place it by moving the mouse on the canvas and left-clicking to complete. Now enter the name `country`. All the names here are case sensitive, so please pay attention, that you are always using the same case.
 
 <img src="img/CPL166_021.png" alt="exercise1" width="70%">  
 <br><br>

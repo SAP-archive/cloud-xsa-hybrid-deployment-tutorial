@@ -66,9 +66,11 @@ Do the proxy setting with the following command.
 set http_proxy=proxy:8080
 ```
 <br>
-Enter the following command to set the cf api endpoint to the right data center and confirm by pressing enter.
+Enter one of the following commands to set the cf api endpoint to the right region and confirm by pressing enter, choose the first one with 'eu10' if your Cloud Foundry trial account is in the region 'Europe (Frankfurt) CF/AWS' or choose the second one with 'us10' if your Cloud Foundry trial account is in the region 'US East (VA) CF/AWS'.
 
 ```
+cf api https://api.cf.eu10.hana.ondemand.com
+
 cf api https://api.cf.us10.hana.ondemand.com
 ```
 <br>

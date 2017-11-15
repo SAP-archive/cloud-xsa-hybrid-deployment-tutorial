@@ -1,5 +1,5 @@
 ### CPL166 
-# Exercise 5 - Deploying your Multi Target APplication to Cloud Platform
+# Exercise 5 - Deploying your Multi-Target Application to Cloud Platform
 In this exercise, we will take the previously developed application and deploy it to SAP Cloud Platform.
 <br><hr><br>
 

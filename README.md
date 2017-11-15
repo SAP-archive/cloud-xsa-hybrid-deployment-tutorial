@@ -35,6 +35,6 @@ Exercise 4: Adding Authentication and Authorization to your Application<br>
 In this exercise, you will add authentication and authorization using the UAA service. Authentication forces users to log on and identify themselves, before they can use the application. You will also add authorization checking code to introduce two categories of users.<br>
 Start right away with [Exercise4](./exercise4/README.md)
 <br><br>
-Exercise 5: Deploying your Multi Target Application to Cloud Platform<br>
+Exercise 5: Deploying your Multi-Target Application to Cloud Platform<br>
 In this exercise, you will create the MTA archive as the deployable unit using the SAP Web IDE export functionality and deploy it to the Cloud Platform trial landscape using the Cloud Foundry command line tool.<br>
 Start right away with [Exercise5](./exercise5/README.md)

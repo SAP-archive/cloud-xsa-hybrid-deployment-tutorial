@@ -20,7 +20,7 @@ Add the same parameter for the module 'cpl166ui'.
   <br>
   
   Now select the module 'cpl166ui' and add a property with the key 'TENANT_HOST_PATTERN' and the value   
-  `^(.*)-trial-dev-cpl166ui.cfapps.us10.hana.ondemand.com`:
+  `^(.*)-trial-dev-cpl166ui.cfapps.eu10.hana.ondemand.com`:
   
   <img src="img/tenant-host-pattern.png" alt="TENTANT HOST PATTERN setting"/>
   <br>  

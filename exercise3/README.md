@@ -160,7 +160,7 @@ We also need to define the dependency to the node module which exposes the OData
 
 * Now define the following properties for cpl166j_api
 
-| Name | Value |
+| Key | Value |
 |------|-------|
 | name | cpl166js_be |
 | url  | ~{url} |

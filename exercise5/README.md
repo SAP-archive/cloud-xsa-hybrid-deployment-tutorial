@@ -59,14 +59,7 @@ Open a command window by right-clicking in the Explorer and selecting 'Open Comm
 <img src="img/open-cmd.png" alt="Open cmd" />
 <br>
 
-
-First we need to set the correct api endpoint of the SAP Cloud Foundry Trial installation. 
-Do the proxy setting with the following command.
-```
-set http_proxy=proxy:8080
-```
-<br>
-Enter one of the following commands to set the cf api endpoint to the right region and confirm by pressing enter, choose the first one with 'eu10' if your Cloud Foundry trial account is in the region 'Europe (Frankfurt) CF/AWS' or choose the second one with 'us10' if your Cloud Foundry trial account is in the region 'US East (VA) CF/AWS'.
+First we need to set the correct api endpoint of the SAP Cloud Foundry Trial installation by entering one of the following commands (depending on your region) and confirm by pressing enter. Choose the first one with 'eu10' if your Cloud Foundry trial account is in the region 'Europe (Frankfurt) CF/AWS' or choose the second one with 'us10' if your Cloud Foundry trial account is in the region 'US East (VA) CF/AWS'.
 
 ```
 cf api https://api.cf.eu10.hana.ondemand.com

@@ -1,10 +1,10 @@
 ### CPL166
-# Exercise 4: Adding Authentication to your Application
+# Exercise 4: Adding Authentication and Authorization to your Application
 
-Up to now we have allowed _anonymous_ access for our application. We will now introduce authentication to secure our application.  
+Up to now we have allowed _anonymous_ access for our application. We will now introduce authentication and authorization to secure our application.  
   
 **Authentication** forces users to log on and identify themselves, before they can use the application.  
-**Authorization** defines what a certain user can do. Due to time constraints we will not cover this in this exercise. 
+**Authorization** defines what a certain user can do.  
   
 Authentication and Authorization are managed using the XS Advanced UAA service which uses OAuth and supports HANA and SAML2 authentication.
 

@@ -18,6 +18,13 @@ To ensure proper configuration and deployment of the services we are going to de
 <li> to use the UAA backing service to ensure security for your application
 <li> build your application and deploy to Cloud Foundry
 
+## Prerequisites
+To start with the tutorial you should have
+1. An SAP HANA Express Edition Installation (see 
+[https://www.sap.com/developer/topics/sap-hana-express.html](https://www.sap.com/developer/topics/sap-hana-express.html)) or a full HANA Platform Edition installation including SAP Web IDE for HANA.
+1. An SAP Cloud Platform Cloud Foundry Trial Account ([https://account.hanatrial.ondemand.com](https://account.hanatrial.ondemand.com))
+1. Roughly two and a half hours of you valuable time
+
 ## Exercises
 Exercise 1: Create Project and Database Artifacts<br>
 In this exercise, you will use SAP Web IDE on HANA to create a Multi Target Application Project with a database module.<br> 

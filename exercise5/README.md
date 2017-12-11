@@ -90,4 +90,40 @@ With the login done, we can start the application deployment. Therefore enter th
 cf deploy cpl166mta_2.0.0.mtar
 ```
 <br>
-After the deployment you can copy the shown url of the cpl166ui application and open it in your browser to test it in the cloud. The command `cf apps` will show you all deployed application microservices. Alternatively or additionally, you can now also go back to your SAP Cloud Platform cockpit, refresh and you will see your deployed applications there. Under the application microservice cpl166ui you will see the same URL which you can also open directly from there. 
+
+## Step 5 - Create a Role Collection and assign it to your user
+Similar to the previous exercise, we now need to create a role collection and assign it to our user in order to be authorized to access our new application.  
+
+Firstly we need to logon once to our uaa tenant to make our user known. Navigate to the url below depending on your trial account location. You need to replace `<p-username>` with your username. 
+
+```
+https://<p-username>trial.authentication.eu10.hana.ondemand.com
+
+https://<p-username>trial.authentication.us10.hana.ondemand.com
+```
+
+Login with your credentials and then switch back to the SAP Cloud Platform Cockpit.
+
+<img src="img/first-uaa-login.png" alt="uaa login page"/>
+<br>
+
+Open the "Security" menu item and navigate to Role Collections page. Create a new collection called 'cpl166_collection'
+<img src="img/trial-create-rolecollection.png" alt="Trust Configuration page"/>
+<br>
+
+Navigate to the Trust Configuration page.
+
+<img src="img/trust-configuration.png" alt="Trust Configuration page" />
+<br>
+
+Click on 'SAP ID Service'. This brings you to another view called 'Role Collection Assignment'.
+
+<img src="img/role-collection-assignment.png" alt="Role Collection Assignment page" />
+<br>
+
+Enter your username in the search field and click on 'Show Assignments'. This enables the button 'Add Assignment'. Click on the button. In the popup select the previously created role collection and confirm by clicking 'Add Assignment'.
+
+<img src="img/add-assignment.png" alt="Add Assignment" />
+<br>
+
+After deployment and role collection configuration you can copy the url of the cpl166ui application as shown after the deploy command and open it in your browser to test it in the cloud. The command `cf apps` will show you all deployed application microservices again. Alternatively or additionally, you can now also go back to your SAP Cloud Platform cockpit, refresh and you will see your deployed applications there. Under the application microservice cpl166ui you will see the same URL which you can also open directly from there. 

@@ -349,7 +349,7 @@ Now we will add the two application roles that we have created in the xs-securit
 
 Save the role collection by clicking on the "Save" button.
 Return to the overview page by clicking on the "Home" button in the top left corner. Now open the "User Management" application.
-Select the user "XSA_ADMIN".
+Select the user you are testing the application with (e.g. "XSA_ADMIN").
 
 <img src="img/select_xsa_admin.png" alt="select xsa_admin">
 
@@ -368,7 +368,7 @@ Select the new role collection "cpl166_collection" by ticking the checkbox and c
 
 Complete the assignment by clicking on the "Save" button.
 
-Now feel free to test your application. This requires a browser restart or new incognito session!
+Now feel free to test your application with the user you have assigned the role collection to. This requires a browser restart or new incognito session!
 <br><br>
 
 Continue with [Exercise5](../exercise5/README.md)

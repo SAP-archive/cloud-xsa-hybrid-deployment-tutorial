@@ -111,6 +111,10 @@ Open the "Security" menu item and navigate to Role Collections page. Create a ne
 <img src="img/trial-create-rolecollection.png" alt="Trust Configuration page"/>
 <br>
 
+Click on the new collection 'cpl166_collection' and assign both 'cpl166View' and 'cpl166Create' roles from the deployed application using the dropdown lists
+<img src="img/trial-add-role.png" alt="Trust Configuration page"/>
+<br>
+
 Navigate to the Trust Configuration page.
 
 <img src="img/trust-configuration.png" alt="Trust Configuration page" />

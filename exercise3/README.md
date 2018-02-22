@@ -112,7 +112,7 @@ function openFirstDialog() {
    }
 }
 ```
-This code creates a small form with two fields and `OK` button where users can enter a new country name and continent. When the user clicks the `OK` button we construct and send the POST request to the server.
+This code creates a small form with two fields and an `OK` button where users can enter a new country name and continent. When the user clicks the `OK` button we construct and send the POST request to the server.
 
 
 * Make a modification to the JavaScript `cpl166js/lib/country/country.xsjs`. The function to save a country should look like this
@@ -158,7 +158,7 @@ We also need to define the dependency to the node module which exposes the OData
 |------|-------|
 | cpl166js_api | destinations |
 
-* Now define the following properties for cpl166j_api
+* Now define the following properties for cpl166js_api
 
 | Key | Value |
 |------|-------|
@@ -202,10 +202,10 @@ You now have defined the dependency between the `cpl166ui` and `cpl166js` module
 You can now test your app by starting it as a Web Application. 
 
 * Right click on "cpl166ui" -> "Run" -> "Run As" -> "Web Application". 
-* Application will start (there might be a popup warning from Chrome. You can also start via the usual link in the Run Console) and you should see some data
+* The application will start (there might be a popup warning from Chrome. You can also start it via the usual link in the Run Console) and you should see some data
 <br><br>
 <img src="img/CPL166_042.png" alt="exercise3" width="40%"> 
 
 <br><br>
 
-Continue with [Exercise4](../exercise4/README.md)
+Continue with [Exercise 4](../exercise4/README.md)

@@ -96,7 +96,7 @@ Add an additional property `forwardAuthToken: true` to the destinations property
 
 # Authorization (optional)
 
-Check your timing and rather continue with [Exercise5](../exercise5/README.md).
+Check your timing and rather continue with [Exercise 5](../exercise5/README.md).
  
 Otherwise your next challenge is to enhance the application with authorization checking code.  
 We will introduce two categories of users: those who can only _view_ the country information, and those who are authorized to _add_ new countries.  
@@ -174,10 +174,10 @@ cd Downloads
 
 <br>
 
-Next we need to login to XS Advanced in order to create the UAA service instance. This can be done with the following command (confirm with enter). Enter the credentials and select the space "DEV".
+Next we need to login to XS Advanced in order to create the UAA service instance. This can be done with the following command (confirm with enter). You might need to adapt the API URL to your specific system. Enter the credentials and select the space "DEV" or "development".
 
 ```
-xs login -a https://WDFlbmt0749.wdf.sap.corp:30030 --skip-ssl-validation
+xs login -a https://hxehost:39030 --skip-ssl-validation
 ```
 
 <br>
@@ -186,7 +186,7 @@ xs login -a https://WDFlbmt0749.wdf.sap.corp:30030 --skip-ssl-validation
 
 <br> 
 
-If the space "DEV" cannot be selected, change the current targeted space by 
+If the space "DEV" or "development" cannot be selected, change the current targeted space by 
 
 ```
 xs target -s DEV
@@ -311,7 +311,7 @@ xs app xsa-admin --urls
 
 <br>
 
-Copy the url and paste it in the address bar of Chrome.
+Copy the url and paste it into the address bar of a new incognito tab of Chrome. You will need to login with the XSA_ADMIN user.
 The Administration Tools overview page will open.
 
 <img src="img/admin_overview.png" alt="Admin overview page">
@@ -349,7 +349,7 @@ Now we will add the two application roles that we have created in the xs-securit
 
 Save the role collection by clicking on the "Save" button.
 Return to the overview page by clicking on the "Home" button in the top left corner. Now open the "User Management" application.
-Select the user you are testing the application with (e.g. "XSA_ADMIN").
+Select the user you are testing the application with (for example "XSA_DEV" or "XSA_ADMIN").
 
 <img src="img/select_xsa_admin.png" alt="select xsa_admin">
 
@@ -368,7 +368,7 @@ Select the new role collection "cpl166_collection" by ticking the checkbox and c
 
 Complete the assignment by clicking on the "Save" button.
 
-Now feel free to test your application with the user you have assigned the role collection to. This requires a browser restart or new incognito session!
+Now feel free to test your application with the user you have assigned the role collection to. This might require a browser restart or a new incognito session!
 <br><br>
 
-Continue with [Exercise5](../exercise5/README.md)
+Continue with [Exercise 5](../exercise5/README.md)

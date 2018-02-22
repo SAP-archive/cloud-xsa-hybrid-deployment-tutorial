@@ -10,7 +10,7 @@ Navigate to your subaccount 'trial'. Click on 'Spaces' in the left navigation pa
 
 ## Step 1 - Create the Project
 Now, we will begin developing our application. As a prerequisite you should have installed SAP HANA Express Edition (see [https://www.sap.com/developer/topics/sap-hana-express.html](https://www.sap.com/developer/topics/sap-hana-express.html)) or a full HANA Platform Edition installation including SAP Web IDE for HANA.
-Launch SAP Web IDE for SAP HANA using in Google Chrome. Login with the a user which has space developer rights.
+Launch SAP Web IDE for SAP HANA in Google Chrome. Login with the a user which has space developer rights.
 
 An application is created in the context of a _project_. In this session we will start completely from scratch. Therefore, a new project needs to be created by clicking on "File" -> "New" -> "Project from Template".
 
@@ -22,7 +22,7 @@ This will open a new dialog where a _project template_ can be selected. Select t
 <img src="img/CPL166_001.png" alt="exercise1" width="70%"> 
 <br><br>
 
-In the next step make sure to select `DEV` as the space and then finish the wizard.
+In the next step make sure to select `DEV` or `development` as the space and then finish the wizard.
 
 <img src="img/CPL166_002.png" alt="exercise1" width="70%"> 
 <br><br>
@@ -32,14 +32,14 @@ This will now create the project structure in your workspace.
 <img src="img/CPL166_003.png" alt="exercise1" width="50%"> 
 <br><br>
 
-Now that we have an empty application project, we can add our first module which will contain the database part of the application.
+Now that we have an empty application project, we can add our first module which will contain the database content of the application.
 This module can be created by right-clicking on the project folder in the workspace (name `CPL166MTA`) and selecting "New" -> "SAP HANA Database Module".
 You might need to click on 'More...' to see this option.
 
 <img src="img/CPL166_004.png" alt="exercise1" width="50%"> 
   <br><br>
   
-In the dialog enter the name of the module `cpl166db`. In the next wizard step make sure to select HANA Database Version 2.0 SPS00! This is required because there is no newer Version available in the Cloud Foundry Trial yet.
+In the dialog enter the name of the module `cpl166db`. In the next wizard step make sure to select HANA Database Version 2.0 SPS00! This is required because there is no newer Version available in the Cloud Foundry Trial yet. Click on "Finish".
 
 <img src="img/CPL166_006.png" alt="exercise1" width="70%"> 
 <br>
@@ -47,7 +47,7 @@ In the dialog enter the name of the module `cpl166db`. In the next wizard step m
     
 ## Step 2 - Adding basic database content
 
-In this step we will now add some basic database content. Therefor we use CDS, an SAP enhancement to SQL for defining and consuming semantically rich data models. 
+In this step we will now add some basic database content. For this we use CDS, an SAP enhancement to SQL for defining and consuming semantically rich data models. 
 To create a CDS file, navigate to the `src/` subfolder of the `cpl166db` module, right-click it and select "New" -> "CDS Artifact".
 
 <img src="img/CPL166_008.png" alt="exercise1" width="50%"> 
@@ -58,7 +58,7 @@ In the upcoming dialoge, enter the name `cpl166f`, set "Open With" to "Text Edit
 <img src="img/CPL166_009.png" alt="exercise1" width="50%"> 
 <br><br>
 
-The text-editor for CDS files will open.  
+The text-editor for CDS files will open. If this doesn't happen automatically right-click the created file and select "Open-With" -> "Code Editor"
 Inside of the file we will define two entities, `world` and `country` and the relationship between those. 
 The first entity 'world' will be defined in the text editor as follows:
 
@@ -83,12 +83,12 @@ Now add a new entity by clicking on the respective icon. Place it by moving the 
 <img src="img/CPL166_021.png" alt="exercise1" width="70%">  
 <br><br>
 
-Open the details view by double-clicking on `country`. Now add a new element by clicking on the '+' icon. Name the element `name` and select the type `String` with a length of 100. Tick the `key` checkbox to set the name as key.
+Open the details view by double-clicking on `country`. Now add a new element by clicking on the '+' icon. Name the element `name` and select the data type `String` with a length of 100. Tick the `key` checkbox to set the name as key.
 
 <img src="img/CPL166_022.png" alt="exercise1" width="100%">  
 <br><br>
 
-To model the relationship of the entities `country` and `world` switch to the 'Associations' tab and add a new association. Enter `partof` as name, select the Target Cardinality [0..1], Target Entity `world` and the Association Type `Managed`. Save the file by pressing CRTL+S and close the detail view by clicking on the `<` icon on the top-left.  
+To model the relationship of the entities `country` and `world` switch to the 'Associations' tab and add a new association by clicking on the '+' icon again. Enter `partof` as name, select the Target Cardinality [0..1], Target Entity `world` and the Association Type `Managed`. Save the file by pressing CRTL+S and close the detail view by clicking on the `<` icon on the top-left.  
 
 <img src="img/CPL166_023.png" alt="exercise1" width="100%">  
 <br><br>
@@ -242,4 +242,4 @@ The content of the tables can be checked with a Select statement:
 select * from "CPL166MTA.cpl166db::cpl166f.country";
 ```
 <br><br>
-Continue with [Exercise2](../exercise2/README.md)
+Continue with [Exercise 2](../exercise2/README.md)

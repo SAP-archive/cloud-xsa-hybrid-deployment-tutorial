@@ -19,16 +19,16 @@ Add the same parameter for the module 'cpl166ui'.
   <img src="img/sap_jwt_trust_acl.png" alt="SAP JWT TRUST ACL setting"/>
   <br>
   
-  Now select the module 'cpl166ui' and add a property with the key 'TENANT_HOST_PATTERN' and the value   
+  Now select the module 'cpl166ui' and add a property with the key `TENANT_HOST_PATTERN` and the value   
   `^(.*)-trial-dev-cpl166ui.cfapps.eu10.hana.ondemand.com`:
   
   <img src="img/tenant-host-pattern.png" alt="TENTANT HOST PATTERN setting"/>
   <br>  
   <br>
   
-  Because the hana service is named `hanatrial` in the trial organization, we need to specify this additional mapping in the mta.yaml. Therefore open the mta.yaml and for the module 'cpl166db' under Resources for 'hdi-container' add an additional paramter with the key `service` and `hanatrial`.
+  Because the hana service is named `hanatrial` in the trial organization, we need to specify this additional mapping in the mta.yaml. Therefore open the mta.yaml and for the module 'cpl166db' under Resources for 'hdi-container' add an additional parameter with the key `service` and `hanatrial`.
   
-  Now, click Save. Afterwards please open the mta.yaml file with the code editor and check that for the two files 'cpl166js' and 'cpl166ui' the value 256M was saved. If not, please correct it manually and save again. Unfortunately, we have found a bug here in this system, which causes with the save in the graphical editor to remove the M.
+  Now, click Save. Afterwards please open the mta.yaml file with the code editor and check that for the two files 'cpl166js' and 'cpl166ui' the value 256M was saved. If not, please correct it manually and save again. Unfortunately, there was a bug in some versions, which caused the graphical editor to remove the M during the save.
   
   
   
@@ -43,8 +43,8 @@ For the cloud deployment we need to create an mta archive. Right-click on the pr
 
 <br>
 
-A new folder called 'mta_archives' has appeared. Unfold it by clicking on the folder. It contains a folder called 'CPL166MTA'. Unfold this folder as well. Inside you will find the newly created mta archive with the name 'cpl166mta_2.0.0.mtar'.  
-Export the archive to you local harddisk by right-clicking and selecting 'Export'. This will start the download in the browser.  
+A new folder called 'mta_archives' has appeared. Unfold it by clicking on the folder. It contains a folder called 'CPL166MTA'. Unfold this folder as well. Inside you will find the newly created mta archive with the name 'cpl166mta_0.0.1.mtar'.  
+Export the archive to your local disk by right-clicking and selecting 'Export'. This will start the download in the browser.  
   
 <img src="img/export_mtar.png" alt="Export mtar">
 <br>  
@@ -52,14 +52,17 @@ Export the archive to you local harddisk by right-clicking and selecting 'Export
 <br>
 
 ## Step 3 - Deploy your application to Cloud Foundry
-In this step we will deploy our new application to Cloud Foundry. On your Laptop, open the Windows Explorer and navigate to the location where you have downloaded the applications mta archive in Step 2. Usually this is the 'Downloads' folder.  
+In this step we will deploy our new application to Cloud Foundry. To do so, you will require the cf CLI. In case you have not installed it yet, you can find installation instructions [here](https://github.com/cloudfoundry/cli#downloads).
+
+On your Laptop, open the Windows Explorer and navigate to the location where you have downloaded the applications mta archive in Step 2. Usually this is the 'Downloads' folder.  
 Open a command window by right-clicking in the Explorer and selecting 'Open Command Window Here'.  
 
 
 <img src="img/open-cmd.png" alt="Open cmd" />
 <br>
 
-First we need to set the correct api endpoint of the SAP Cloud Foundry Trial installation by entering one of the following commands (depending on your region) and confirm by pressing enter. Choose the first one with 'eu10' if your Cloud Foundry trial account is in the region 'Europe (Frankfurt) CF/AWS' or choose the second one with 'us10' if your Cloud Foundry trial account is in the region 'US East (VA) CF/AWS'.
+
+First we need to set the correct api endpoint of the SAP Cloud Platform Cloud Foundry Trial installation by entering one of the following commands (depending on your region) and confirm by pressing enter. Choose the first one with 'eu10' if your Cloud Foundry trial account is in the region 'Europe (Frankfurt) CF/AWS' or choose the second one with 'us10' if your Cloud Foundry trial account is in the region 'US East (VA) CF/AWS'.
 
 ```
 cf api https://api.cf.eu10.hana.ondemand.com
@@ -85,6 +88,7 @@ The prompt will ask you for your credentials, enter the email and password and c
 <br>
 
 With the login done, we can start the application deployment. Therefore enter the deploy command as follows and confirm by pressing enter.
+If you do not have the "cf deploy" command available, follow the instructions at [SAP/cf-mta-plugin](https://github.com/SAP/cf-mta-plugin#download-and-installation) to install the CF CLI plugin, which provides this functionality.
 
 ```
 cf deploy cpl166mta_2.0.0.mtar

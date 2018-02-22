@@ -23,7 +23,7 @@ service {
 This will define a service named `euro.xsodata` with an entity called `euro`, based on the `european_countries` Calculation View we have defined in exercise 1. The entity `euro` uses an auto-generated key called `ID`.
 Before we can test the service, we have to define a dependency from the Node.js module to the database module.
 3. Open the MTA editor by double-clicking on `mta.yaml` in the project root folder and select the `cpl166js` module.<br>
-4. Go to the "Requires" section and add the dependencies to `cpl166db` and `hdi-container`
+4. Go to the "Requires" section and add the dependencies to `cpl166db` and `hdi-container` (if this is not available it might be called `hdi_cpl166db`)
 <br><br>
 <img src="img/CPL166_ex2_011.png" alt="exercise2" width="80%"> 
 <br><br>
@@ -36,7 +36,7 @@ We will also review necessary parameters to expose the service.<br>
 <br><hr><br>
 
 ## Step 3 - Testing the OData service
-1. Open the file `cpl166js/package.json` and update the version dependency for @sap/xsjs to version "1.14.1". Then save the file.
+1. Open the file `cpl166js/package.json` and update the version dependency for @sap/xsjs to version "1.14.1" if it is smaller. Then save the file.
 1. Right-click on the module `cpl166js` and choose  "Run" -> "Run as Node.js Application"  in the context menu. The command automatically builds the application, too. You can view the build/run progress in the run console at the bottom of the SAP Web IDE screen.<img src="img/CPL166_ex2_010.png" alt="exercise2" width="80%">
 1. When the application has started successfully, you will see a link on top of the run console to navigate to it in the browser.
 1. Since we did not change the code in application start-up file `index.xsjs`, the Web browser still displays the text "Hello World". However, you can use a modified URL to test the OData service.
@@ -126,4 +126,4 @@ The built-in debugger in Web IDE enables you to perform standard debugging tasks
 7. Choose "Resume" to complete execution of the JavaScript
 
 <br><br>
-Continue with [Exercise3](../exercise3/README.md)
+Continue with [Exercise 3](../exercise3/README.md)

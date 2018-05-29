@@ -10,7 +10,7 @@ Navigate to your subaccount 'trial'. Click on 'Spaces' in the left navigation pa
 
 ## Step 1 - Create the Project
 Now, we will begin developing our application. As a prerequisite you should have installed SAP HANA Express Edition (see [https://www.sap.com/developer/topics/sap-hana-express.html](https://www.sap.com/developer/topics/sap-hana-express.html)) or a full HANA Platform Edition installation including SAP Web IDE for HANA.
-Launch SAP Web IDE for SAP HANA in Google Chrome. Login with the a user which has space developer rights.
+Launch SAP Web IDE for SAP HANA in Google Chrome. Login with a user which has space developer rights.
 
 An application is created in the context of a _project_. In this session we will start completely from scratch. Therefore, a new project needs to be created by clicking on "File" -> "New" -> "Project from Template".
 
@@ -123,7 +123,7 @@ This will open the graphical editor for Calculation Views.
 <img src="img/CPL166_033.png" alt="exercise1" width="50%">  
 <br><br>
 
-First, we will add a second projection underneath the already existing one. This can be done by clicking the respective icon in  the toolbar. To place the projection, move the mouse to a an empty space below the existing projection on the canvas. Then use a left-click to create the new projection node at the current position. Then draw a relation by using the arrow button which is visible when you select the new projection (hold the mouse button on the arrow button and drag the connection to the other projection).
+First, we will add a second projection underneath the already existing one. This can be done by clicking the respective icon in  the toolbar. To place the projection, move the mouse to an empty space below the existing projection on the canvas. Then use a left-click to create the new projection node at the current position. Then draw a relation by using the arrow button which is visible when you select the new projection (hold the mouse button on the arrow button and drag the connection to the other projection).
 
 <img src="img/CPL166_034.png" alt="exercise1" width="30%">  
 <br><br>
